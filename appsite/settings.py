@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ym$w6!w!ryf@x30ymr5n1_^91wj(1@px4tqu+p3o!=!(#wwpoi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["botondepanico.viryx.net", "127.0.0.1", "localhost"]
 
 
 # Application definition
