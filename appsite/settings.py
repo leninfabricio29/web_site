@@ -23,10 +23,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ym$w6!w!ryf@x30ymr5n1_^91wj(1@px4tqu+p3o!=!(#wwpoi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["botondepanico.viryx.net", "127.0.0.1", "localhost"]
+ALLOWED_HOSTS = ["botondepanico.viryx.net", "www.botondepanico.viryx.net", "127.0.0.1", "localhost", "botondepanico.viryx.net"]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://botondepanico.viryx.net",
+    # si usas WWW o subdominios adicionales, agrégalos también
+    "https://www.botondepanico.viryx.net",
+]
 
 # Application definition
 
@@ -37,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
     'releases'
 ]
 
@@ -115,7 +121,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = "/static/"
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
