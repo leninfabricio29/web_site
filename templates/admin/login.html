@@ -1,0 +1,15 @@
+{% extends "admin/login.html" %}
+{% load static %}
+
+{% block title %}Administracion App- Softkilla{% endblock %}
+
+{% block extrastyle %}
+<link rel="stylesheet" type="text/css" href="{% static 'admin/custom_admin.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="main">
+	<h1>Bienvenido a Administracion App- Softkilla</h1>
+	{{ block.super }}
+</div>
+{% endblock %}

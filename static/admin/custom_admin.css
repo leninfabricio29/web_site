@@ -1,0 +1,72 @@
+/* Custom admin styles: Softkilla morado y negro */
+#site-name {
+    font-size: 2.2rem;
+    color: #fff;
+    background: #6C2EB4;
+    padding: 16px 32px;
+    border-radius: 12px;
+    display: inline-block;
+    margin: 24px 0 16px 0;
+    letter-spacing: 1px;
+}
+
+body.login {
+    background: #eeeeee !important;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .main {
+    background: #d8d8d8;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px #6C2EB4aa;
+    padding: 40px 32px 32px 32px;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login h1 {
+    color: #6C2EB4 !important;
+    font-weight: bold;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.login form {
+    width: 100%;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #6C2EB4;
+    margin-bottom: 18px;
+    color: #000000;
+}
+
+.login input[type="submit"] {
+    background: #6C2EB4;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.login input[type="submit"]:hover {
+    background: #4b1c7a;
+}
+
+
+
+

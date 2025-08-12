@@ -1,0 +1,18 @@
+/* Custom admin styles */
+#site-name {
+    font-size: 2rem;
+    color: #fff;
+    background: #222;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+body.login {
+    background: #222 !important;
+}
+
+#content h1, .login h1 {
+    color: #4CAF50 !important;
+    font-weight: bold;
+}
